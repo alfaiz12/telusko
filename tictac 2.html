@@ -1,0 +1,301 @@
+<html>
+<head>
+    <title>
+        TICTACTOE</title>
+        <link rel="stylesheet" type="text/css" href="tictac.css">
+        <body>
+            
+            <h1 id="turn" style="margin-left:35%;">TIC TAC TOE</h1>
+            <input style="margin-top:4cm;margin-left: 10cm;height:2cm;width:2cm;background-color:pink" onclick="one()" type="button" value="#" id="00">
+            <input style="height:2cm;width:2cm;background-color:pink " onclick="two()" type="button" value="#" id="01">
+            <input style="height:2cm;width:2cm;background-color:pink" onclick="three()" type="button" value="#" id="02"><br>
+            <input style="margin-top:2px;margin-left: 10cm;height:2cm;width:2cm;background-color:pink" onclick="four()"type="button" value="#" id="10">
+            <input style="height:2cm;width:2cm;background-color:pink" onclick="five()"type="button" value="#" id="11">
+            <input style="height:2cm;width:2cm;background-color:pink" onclick="six()"type="button" value="#" id="12"><br>
+            <input style="margin-top:2px;margin-left: 10cm; height:2cm;width:2cm;background-color:pink" onclick="seven()"type="button" value="#" id="20">
+            <input style="height:2cm;width:2cm;background-color:pink" onclick="eight()"type="button" value="#" id="21">
+            <input style="height:2cm;width:2cm;background-color:pink" onclick="nine()"type="button" value="#" id="22">
+           </body>
+           </head>
+           </html>
+           <script>
+               var alf=4;//global variable
+                var a=document.getElementById("00").value;//global variable
+                var b=document.getElementById("01").value;//global variable
+                var c=document.getElementById("02").value;//global variable
+                var d=document.getElementById("10").value;//global variable
+                var e=document.getElementById("11").value;//global variable
+                var f=document.getElementById("12").value;//global variable
+                var g=document.getElementById("20").value;//global variable
+                var h=document.getElementById("21").value;//global variable
+                var i=document.getElementById("22").value;//global variable
+              function one()
+              {
+                  if(alf%2==0)
+                  {                    
+                      a="x";
+                      document.getElementById("00").value="x";
+                      document.getElementById("00").disabled = true;                                      
+                      alf++;                  
+                      if((a=="x" && b=="x" && c=="x") || (a=="x" && e=="x" && i=="x") || (a=="x" && d=="x" && g=="x"))
+                      {
+                          alert("alfaiz khan win");
+                      }                  
+                  }
+                  else
+                  {
+                      a="0";
+                      document.getElementById("00").value="0";
+                      document.getElementById("00").disabled = true;                     
+                      alf++;                   
+                      if((a=="0" && b=="0" && c=="0") || (a=="0" && e=="0" && i=="0") || (a=="0" && d=="0" && g=="0") )                   
+                      {
+                          alert("alfaiz khan win");
+                      }
+                  }                   
+              }
+              function two()
+              {
+                  if(alf%2==0)
+                  {                   
+                      b="x";
+                      document.getElementById("01").value="x";
+                      document.getElementById("01").disabled = true;                    
+                      alf++;
+                      if((a=="x" && b=="x" && c=="x") || (b=="x" && e=="x" && h=="x"))                    
+                      {
+                          alert("alfaiz khan win");
+                      }                    
+                  }
+                  else
+                  {
+                      b="0";
+                      document.getElementById("01").disabled = true;
+                      document.getElementById("01").value="0";                    
+                      alf++;
+                      if((a=="0" && b=="0" && c=="0") || (b=="0" && e=="0" && h=="0"))
+
+                      {
+                          alert("alfaiz khan win");
+                      }
+                  }
+                  
+                 
+              }
+              function three()
+              {
+                  if(alf%2==0)
+                  {
+                     
+                      c="x";
+                      document.getElementById("02").disabled = true;
+                      document.getElementById("02").value="x";
+                     
+                      alf++;
+                      if((a=="x" && b=="x" && c=="x") || (c=="x" && f=="x" && i=="x") || (c=="x" && e=="x" && g=="x"))
+                      {
+                          alert("alfaiz khan win");
+                      }
+                      
+                  }
+                  else
+                  {
+                      c="0";
+                      document.getElementById("02").disabled = true;
+                      document.getElementById("02").value="0";
+                      alf++;
+                      if((a=="0" && b=="0" && c=="0") || (c=="0" && f=="0" && i=="0") || (c=="0" && e=="0" && g=="0"))
+
+                    
+                      {
+                          alert("alfaiz khan win");
+                      }
+                  }
+
+                  
+                  
+                 
+              }
+              function four()
+              {
+                  if(alf%2==0)
+                  {
+                     
+                      d="x";
+                      document.getElementById("10").value="x";
+                      document.getElementById("10").disabled = true;
+                      
+                      alf++;
+                      if((d=="x" && e=="x" && f=="x") || (a=="x" && d=="x" && g=="x"))
+
+                    
+                      {
+                          alert("alfaiz khan win");
+                      }
+                  }
+                  else
+                  {
+                      d="0";
+                      document.getElementById("10").value="0";
+                      document.getElementById("10").disabled = true;
+                     
+                      alf++;
+                      if((d=="0" && e=="0" && f=="0") || (a=="0" && d=="0" && g=="0"))
+                    
+                      {
+                          alert("alfaiz khan win");
+                      }
+                  }
+
+                  
+                  
+                 
+              }
+              function five()
+              {
+                  if(alf%2==0)
+                  {
+                     
+                      e="x";
+                      document.getElementById("11").disabled = true;
+                      document.getElementById("11").value="x";
+                      alf++;
+                      if((d=="x" && e=="x" && f=="x") || (b=="x" && e=="x" && h=="x") || (g=="x" && e=="x" && c=="x")  || (a=="x" && e=="x" && i=="x"))
+
+                    
+                      {
+                          alert("alfaiz khan win");
+                      }
+                  }
+                  else
+                  {
+                      e="0";
+                      document.getElementById("11").disabled = true;
+                      document.getElementById("11").value="0";
+                      alf++;
+                      if((d=="0" && e=="0" && f=="0") || (b=="0" && e=="0" && h=="0") || (g=="0" && e=="0" && c=="0")  || (a=="0" && e=="0" && i=="0"))
+                    
+                      {
+                          alert("alfaiz khan win");
+                      }
+                  }                
+              }
+              function six()
+              {
+                  if(alf%2==0)
+                  {
+                     
+                      f="x";
+                      document.getElementById("12").disabled = true;
+                      document.getElementById("12").value="x";
+                      alf++;
+                      if((c=="x" && f=="x" && i=="x") || (d=="x" && e=="x" && f=="x") )
+
+                    
+                      {
+                          alert("alfaiz khan win");
+                      }
+                  }
+                  else
+                  {
+                      f="0";
+                      document.getElementById("12").disabled = true;
+                      document.getElementById("12").value="0";
+                      alf++;
+                      if((c=="0" && f=="0" && i=="0") || (d=="0" && e=="0" && f=="0") )
+
+                    
+                      {
+                          alert("alfaiz khan win");
+                      }
+                  }
+
+                  
+                  
+                  
+              }
+              function seven()
+              {
+                  if(alf%2==0)
+                  {
+                     
+                     g="x";
+                      document.getElementById("20").disabled = true;
+                      document.getElementById("20").value="x";
+                      alf++;
+                      if((a=="x" && d=="x" && g=="x") || (g=="x" && e=="x" && c=="x") || (g=="x" && h=="x" && i=="x"))
+                     {
+                          alert("alfaiz khan win");
+                      }
+                  }
+                  else
+                  {
+                      g="0";
+                      document.getElementById("20").disabled = true;
+                      document.getElementById("20").value="0";
+                      alf++;
+                      if((a=="0" && d=="0" && g=="0") || (g=="0" && e=="0" && c=="0") || (g=="0" && h=="0" && i=="0"))
+
+                    
+                      {
+                          alert("alfaiz khan win");
+                      }
+                  }
+              }
+              function eight()
+              {
+                  if(alf%2==0)
+                  {
+                     
+                     h="x";
+                      document.getElementById("21").disabled = true;
+                      document.getElementById("21").value="x";
+                      alf++;
+                    
+                      if((g=="x" && h=="x" && i=="x") || (b=="x" && e=="x" && h=="x"))
+                     {
+                          alert("alfaiz khan win");
+                      }
+
+                  }
+                  else
+                  {
+                      h="0";
+                      document.getElementById("21").disabled = true;
+                      
+                      document.getElementById("21").value="0";
+                      alf++;
+                      if((g=="0" && h=="0" && i=="0") || (b=="0" && e=="0" && h=="0"))                    
+                      {
+                          alert("alfaiz khan win");
+                      }
+                     
+                  }
+              }
+              function nine()
+              {
+                  if(alf%2==0)
+                  {
+                     
+                     i="x";
+                      document.getElementById("22").disabled = true;
+                      document.getElementById("22").value="x";
+                      alf++;
+                      if((g=="x" && h=="x" && i=="x") || (c=="x" && f=="x" && i=="x") || (a=="x" && e=="x" && i=="x"))
+                     {
+                          alert("alfaiz khan win");
+                      }
+                  }
+                  else
+                  {
+                      i="0";
+                      document.getElementById("22").disabled = true;
+                      document.getElementById("22").value="0";
+                      alf++;
+                      if((g=="x" && h=="x" && i=="x") || (c=="x" && f=="x" && i=="x") || (a=="x" && e=="x" && i=="x"))
+                     {
+                          alert("alfaiz khan win");
+                      }
+                  }
+              }
+               </script>
